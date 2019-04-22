@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+    <!--<ImageView-->
+        <!--android:src="@drawable/header_logo"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="64dp"-->
+        <!--android:scaleType="center"-->
+        <!--android:background="#FFFFBB33"-->
+        <!--android:contentDescription="@string/app_name" />-->
+    <!--<EditText-->
+        <!--android:id="@+id/username"-->
+        <!--android:inputType="textEmailAddress"-->
+        <!--android:layout_width="250dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:layout_marginLeft="4dp"-->
+        <!--android:layout_marginRight="4dp"-->
+        <!--android:layout_marginBottom="4dp"-->
+        <!--android:hint="@string/username" />-->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Meeting Name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </android.support.design.widget.TextInputLayout>
+    <!--<EditText-->
+        <!--android:id="@+id/password"-->
+        <!--android:inputType="textPassword"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:layout_marginLeft="4dp"-->
+        <!--android:layout_marginRight="4dp"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--android:fontFamily="sans-serif"-->
+        <!--android:hint="@string/password"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:textColor="#fff"
+            android:backgroundTint="#9400d3"
+            android:layout_marginBottom="2dp"
+            android:text="Start" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="50dp"
+            android:textColor="#fff"
+            android:backgroundTint="#9400d3"
+            android:layout_marginBottom="2dp"
+            android:text="Stop" />
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/add_member_to_meeting"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/post"
+        android:layout_margin="3dp"
+        android:layout_width="75dp"
+        android:layout_height="37dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="Helvetica"
+        android:textColor="#ffff"
+        android:layout_gravity="center_horizontal"
+        android:text="Post" />
+</LinearLayout>
