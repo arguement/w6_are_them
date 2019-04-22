@@ -58,21 +58,7 @@ public class Tab2 extends Fragment {
                 String content = result.getContents();
                 String[] contentsArr = content.split(","); // splits data taken from barcode into array
                 LOFE.add(contentsArr[0],contentsArr[1],contentsArr[2]);
-                //Bundle args = new Bundle();
-                //Tab1 tab1 = new Tab1();
-               /* args.putStringArray("data",content.split(","));
-                tab1.setArguments(args);*/
 
-              /*  FragmentManager fragmentManager = getFragmentManager();
-                FragmentTransaction ft = fragmentManager.beginTransaction();
-                ft.replace(R.id.tabItem, tab1);
-                ft.addToBackStack("");*/
-            /*  final  Fragment ft = getFragmentManager().findFragmentById(R.id.recycleView);
-              FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-              fragmentTransaction.detach(ft);
-              fragmentTransaction.attach(ft);
-              fragmentTransaction.commit();*/
-                //ft.commit();
 
             }
         }

@@ -3,8 +3,10 @@ package com.example.douglas.econsociety;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MemberScreenActivity extends AppCompatActivity {
     TextView name,id,num;
@@ -27,4 +29,5 @@ public class MemberScreenActivity extends AppCompatActivity {
         intent.putExtra("cred",arr);
         startActivity(intent);
     }
+
 }

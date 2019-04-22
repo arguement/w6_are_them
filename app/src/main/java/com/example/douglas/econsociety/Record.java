@@ -47,18 +47,7 @@ public class Record{
 		this.endTime = time;
 	}
 	
-	/*public String toString(){
-		String output = "";
-		output = output + identifier + "\n" + "Arrived: " + startTime + "\n" + "Departed: " + endTime + "\n" + "Duration of Stay: " + Math.round(duration);
-		return output;
-	}*/
-	
-/*	public static void main(String[] args){
-		Record r = new Record("6257gyd");
-		r.setEnd(new Date(118, 10, 23, 23, 30));
-		r.calcDuration(r.getStart(), r.getEnd());
-		System.out.println(r);
-	}*/
+
 	public String getDate(){
 		Date date = new Date();
 		String strDateFormat = "hh:mm:ss a";

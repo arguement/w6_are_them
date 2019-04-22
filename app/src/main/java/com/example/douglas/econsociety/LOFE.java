@@ -69,7 +69,7 @@ public class LOFE {
 
                             }
                             else {
-                                // Toast.makeText(getContext(), "Error!", Toast.LENGTH_SHORT).show();
+
                                 i.storeEnd(); //req 3 time keeping time keeping
                                 notebookRef.document(i.getId()).set(i)
                                         .addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -88,18 +88,6 @@ public class LOFE {
                     });
 
 
-                  /*  notebookRef.document(i.getId()).set(i)
-                            .addOnSuccessListener(new OnSuccessListener<Void>() {
-                                @Override
-                                public void onSuccess(Void aVoid) {
-                                    Toast.makeText(context, "added", Toast.LENGTH_SHORT).show();
-                                }
-                            }).addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            Toast.makeText(context, "Error!", Toast.LENGTH_SHORT).show();
-                        }
-                    });*/
                 }//end of if
             }
 

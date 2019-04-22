@@ -7,4 +7,19 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_favorite"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="@string/action_favorite"
+        app:showAsAction="ifRoom"/>
+
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_settingss"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+    <item android:id="@+id/another"
+        android:title="@string/add_drop"
+        app:showAsAction="never"/>
+
 </menu>

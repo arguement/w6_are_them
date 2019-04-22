@@ -5,20 +5,29 @@ import java.util.*;
 public class Meeting {
 
 
-    protected Date date =  new Date();
-  //protected Member memberName = new Member();
-    protected ArrayList  attendanceList = new ArrayList();
 
 
-    protected String meetingIdentifier(){
+    private Date timeKeeping;
+    private ArrayList<Member>  attendanceList = new ArrayList<Member>();
+
+
+    public String meetingIdentifier(){
         SimpleDateFormat dt = new SimpleDateFormat("dd/mm/yyyy");
+        Date date = new Date();
        String meetingName = "LOFE" + dt.format(date);
         return meetingName;
     }
 
-    protected void attendance(Member m){
-       String name = m.getName();
-       attendanceList.add(name);
+    public void attendance(Member m){
+//       String name = m.getName();
+       attendanceList.add(m);
+    }
+    public int timeKeeping(){
+        return 0;
+    }
+
+    public Member getMember(){
+        return new Member(null,null,null);
     }
 
 }
