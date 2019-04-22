@@ -83,6 +83,7 @@ public class PopUp extends DialogFragment implements TimePickerDialog.OnTimeSetL
             @Override
             public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
 //                (long) viewHolder.itemView.getTag();
+//                mAdapter.notifyItemRemoved(0);
             }
         }).attachToRecyclerView(mRecyclerView);
 
@@ -138,5 +139,15 @@ public class PopUp extends DialogFragment implements TimePickerDialog.OnTimeSetL
 
     public void doToast(String mess){
         Toast.makeText(getActivity(),mess,Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    public void onDestroy() {
+        Log.d("jordan","destroyed");
+        super.onDestroy();
+        ArrayList<Member> memberList = LOFE.showList();
+        for (Member i: memberList){
+            i.setSelected(false);
+        }
     }
 }

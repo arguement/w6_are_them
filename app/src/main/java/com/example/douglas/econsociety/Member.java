@@ -25,7 +25,8 @@ public class Member {
 
     private String startTime;
     private String endTime;
-
+    private String text;
+    private boolean isSelected = false;
 
 
     private String calcInterval;
@@ -155,5 +156,14 @@ public class Member {
 
 
         return String.format("%d",elapsedMinutes);
+    }
+
+    public void setSelected(boolean selected) {
+        isSelected = selected;
+    }
+
+
+    public boolean isSelected() {
+        return isSelected;
     }
 }
