@@ -2,15 +2,19 @@ package com.example.douglas.econsociety;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class LOFE {
     private static ArrayList<Member> list = new ArrayList<Member>();
@@ -117,9 +121,55 @@ public class LOFE {
         }
 
     }
-    public  void test(){
+    public static void sendMeeting(Meeting meeting){
+        Log.d("jordan", "inside send meetinh" );
+        CollectionReference hold = notebookRef;
+        Log.d("jordan", "doesnt reach" );
+        Log.d("jordan", meeting.toString() );
+        Log.d("jordan",""+ db.collection("Meeting") );
+        Map<String, String> test = new HashMap<String, String>();
+        test.put("testkey","testvalue");
+
+        db.collection("Meeting")
+                .add(meeting)
+                .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                    @Override
+                    public void onSuccess(DocumentReference documentReference) {
+                        Log.d("jordan", "DocumentSnapshot added with ID: " + documentReference.getId());
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.w("jordan", "Error adding document", e);
+                    }
+                });
 
     }
+
+    // all methods below are not yet implemented
+
+    /**
+     * stub method for sorting elements from db
+     */
+    public void sort(){
+
+    }
+
+    public Member search(){
+        return new Member(null,null,null);
+    }
+
+    public String generateReport(){
+        return  "";
+    }
+    public String getReport(){
+        return  "";
+    }
+    public void manageRecord(){
+
+    }
+
 
 
 

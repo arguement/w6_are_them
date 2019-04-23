@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
@@ -28,12 +29,12 @@ public class PopUp extends DialogFragment implements TimePickerDialog.OnTimeSetL
     private MeetingMemberAdapter mAdapter;
     private Button post, start,stop;
     private PopUp cont = this;
-    private int[] startTime = new int[2]; // stores information on the time picker
+    private int[] startTime; // stores information on the time picker
 
     /**
      *  stores the information about when the meeting will end
      */
-    private int[] endTime = new int[2];
+    private int[] endTime;
 
     /**
      *  the button id that caused the time popup
@@ -64,7 +65,7 @@ public class PopUp extends DialogFragment implements TimePickerDialog.OnTimeSetL
         memberList.add(new Member("Derwent Johnson","620103582"," 5%"));
         memberList.add(new Member("Daniel Battick","620103582"," 4%"));
 
-        mAdapter = new MeetingMemberAdapter(getActivity(), memberList);
+        mAdapter = new MeetingMemberAdapter(getActivity(),LOFE.showList());
         // Connect the adapter with the recycler view.
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
@@ -84,21 +85,52 @@ public class PopUp extends DialogFragment implements TimePickerDialog.OnTimeSetL
             public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
 //                (long) viewHolder.itemView.getTag();
 //                mAdapter.notifyItemRemoved(0);
+                Log.d("adapter position jordan",viewHolder.getAdapterPosition()+"");
             }
         }).attachToRecyclerView(mRecyclerView);
 
         post  = v.findViewById(R.id.post);
+        final TextView meetingName = v.findViewById(R.id.meeting_name);
+        final TextView meetingAgenda = v.findViewById(R.id.agenda);
 
         start = v.findViewById(R.id.start);
         stop = v.findViewById(R.id.stop);
 
-        /**
-         * when the post button is clicked it should store the info in firebase
-         */
+
+         // when the post button is clicked it should store the info in firebase
+
         post.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(),"clicked",Toast.LENGTH_LONG).show();
+
+                if (startTime == null || endTime == null){
+                    return;
+                }
+
+                Log.d("jordan","inside on click");
+
+
+                 // create a meeting object that will store the name of the meeting and the attendance represented as members
+                String nameOfEvent = meetingName.getText().toString();
+                String agenda = meetingAgenda.getText().toString();
+
+
+                Log.d("jordan","stores text");
+
+                Meeting meeting = new Meeting(nameOfEvent,agenda,startTime,endTime);
+                Log.d("jordan","adds meeting");
+
+                ArrayList<Member> memberList = LOFE.showList();
+                Log.d("jordan","declare member list");
+                for (Member i: memberList){
+                    if (i.isSelected()) {
+                        meeting.attendance(i);
+                    }
+                }
+                Log.d("jordan","inside post button");
+                LOFE.sendMeeting(meeting);
+
+                cont.dismiss();
             }
         });
 
@@ -114,11 +146,13 @@ public class PopUp extends DialogFragment implements TimePickerDialog.OnTimeSetL
         doToast(""+hourOfDay);
 
         if (initialiseTime == R.id.start){
+            this.startTime = new int[2];
             this.startTime[0] = hourOfDay;
             this.startTime[1] = minute;
             System.out.println("start button clicked");
         }
         else if ( initialiseTime == R.id.stop ){
+            this.endTime = new int[2];
             this.endTime[0] = hourOfDay;
             this.endTime[1] = minute;
             System.out.println("stop button clicked");

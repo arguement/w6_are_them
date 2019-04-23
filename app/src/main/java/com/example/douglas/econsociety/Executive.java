@@ -23,11 +23,24 @@ public class Executive extends Member{
 	public String getPosition(){
 		return this.position;
 	}
-	
+
+
+	/**
+	 * takes report from Report Manager.Record Manager
+	 * @return String
+	 */
 	public String generateReport(){
 		//Implement report generator
 		return "";
 	}
+
+    /**
+     *
+     * @param member this is a member of the club
+     */
+	public void ManageRecord(Member member){
+
+    }
 	
 	public String toString(){
 		String output = "";
