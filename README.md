@@ -2,6 +2,8 @@
 
 This is a project build for the league of future economist
 
+this is built to be allow registration of members of any club to to keep track of existing members to there club
+
 ## Issue Statement
 
 They have a pen and paper system. They cannot tell who are the actual members of the club. They want an
