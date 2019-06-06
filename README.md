@@ -11,7 +11,7 @@ improved and quicker version, in order to save and retrieve data for each member
 
 1. Manage Records 
 
-   *The system shall be able to manage records for members, this includes the option  
+  *The system shall be able to manage records for members, this includes the option  
    Software Requirements Specification for Economic Engineering Page 7  
    to create, update or remove a record. Data to be stored include names, ID numbers, cell phone  
    numbers and the hall of association for members who live on campus.
