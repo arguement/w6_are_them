@@ -24,11 +24,6 @@ improved and quicker version, in order to save and retrieve data for each member
 
    Displays the details of each member
    
- <style>
-   div{
-      margin: 20px;
-   }
-   </style>
    
 ## Screens   
    
@@ -38,6 +33,7 @@ improved and quicker version, in order to save and retrieve data for each member
      <img width="300" height="auto" src="https://i.imgur.com/Ef44hjL.png">
    </span>
 </div>
+      <br><br>
       
 <h2> barcode screen, Generator and Scanner <h2>
 
@@ -48,14 +44,14 @@ improved and quicker version, in order to save and retrieve data for each member
    </span>
    
 </div>
-
+   <br><br>
 <div>
    <p>Generated barcode by specified user</p>
    <span align="center">
      <img width="300" height="auto" src="https://i.imgur.com/pkV4g3G.png">
    </span>  
  </div>
- 
+   <br><br>
  <div>
    <p>Barcode Scanner</p>
    <span align="center">
