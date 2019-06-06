@@ -58,5 +58,25 @@ improved and quicker version, in order to save and retrieve data for each member
      <img width="300" height="auto" src="https://i.imgur.com/hSpob0c.png">
    </span>  
  </div>
+   <br><br>
+   
+  <div>
+   <p>Read Barcode</p>
+   <span align="center">
+     <img width="300" height="auto" src="https://i.imgur.com/el66Gz3.png">
+   </span>  
+ </div>
+   <br><br>
+   
+<div>
+   <p>added user</p>
+   <span align="center">
+     <img width="300" height="auto" src="https://i.imgur.com/fBDf9Me.png">
+   </span>  
+ </div>
+   <br><br>
+ 
+   
+   
 
 
