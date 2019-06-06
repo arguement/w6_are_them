@@ -24,6 +24,12 @@ improved and quicker version, in order to save and retrieve data for each member
 
    Displays the details of each member
    
+ <style>
+   div{
+      margin: 20px;
+   }
+   </style>
+   
 ## Screens   
    
 <div> 
