@@ -26,7 +26,7 @@ improved and quicker version, in order to save and retrieve data for each member
    
  
  Inline-style: 
-![alt text](https://i.imgur.com/Ef44hjL.png)
+![[logo]](https://i.imgur.com/Ef44hjL.png)
 
  Inline-style: 
-![alt text](https://i.imgur.com/vseAuMI.png)
+![[logo]](https://i.imgur.com/vseAuMI.png)
