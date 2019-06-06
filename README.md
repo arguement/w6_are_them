@@ -25,11 +25,11 @@ improved and quicker version, in order to save and retrieve data for each member
    Displays the details of each member
    
  
- <p align="center">
+ <span align="center">
   <img width="460" height="300" src="https://i.imgur.com/Ef44hjL.png">
-</p>
+</span>
 
- <p align="center">
-  <img width="460" height="300" src="https://i.imgur.com/vseAuMI.png">
-</p>
+ <span align="center">
+  <img width="300" height="auto" src="https://i.imgur.com/vseAuMI.png">
+</span>
 
