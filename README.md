@@ -35,7 +35,7 @@ improved and quicker version, in order to save and retrieve data for each member
       
 <h2> barcode screen, Generator and Scanner <h2>
 
-<div> 
+<div magin="30"> 
    <p> Barcode to intiate scan </p>
     <span align="center">
      <img width="300" height="auto" src="https://i.imgur.com/vseAuMI.png">
