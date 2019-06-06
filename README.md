@@ -25,8 +25,11 @@ improved and quicker version, in order to save and retrieve data for each member
    Displays the details of each member
    
  
- Inline-style: 
-![[logo]](https://i.imgur.com/Ef44hjL.png)
+ <p align="center">
+  <img width="460" height="300" src="https://i.imgur.com/Ef44hjL.png">
+</p>
 
- Inline-style: 
-![[logo]](https://i.imgur.com/vseAuMI.png)
+ <p align="center">
+  <img width="460" height="300" src="https://i.imgur.com/vseAuMI.png">
+</p>
+
