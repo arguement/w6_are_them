@@ -36,13 +36,13 @@ improved and quicker version, in order to save and retrieve data for each member
 <div> 
    <h2> barcode screen, Generator and Scanner <h2>
     <span align="center">
-     <img width="300" height="auto" src="="https://i.imgur.com/vseAuMI.png">
+     <img width="300" height="auto" src="https://i.imgur.com/vseAuMI.png">
    </span>
    <span align="center">
-     <img width="300" height="auto" src="="https://i.imgur.com/pkV4g3G.png">
+     <img width="300" height="auto" src="https://i.imgur.com/pkV4g3G.png">
    </span>  
    <span align="center">
-     <img width="300" height="auto" src="="https://i.imgur.com/hSpob0c.png">
+     <img width="300" height="auto" src="https://i.imgur.com/hSpob0c.png">
    </span> 
 </div>
 
