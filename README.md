@@ -26,7 +26,7 @@ improved and quicker version, in order to save and retrieve data for each member
    
  
  <span align="center">
-  <img width="460" height="300" src="https://i.imgur.com/Ef44hjL.png">
+  <img width="300" height="auto" src="https://i.imgur.com/Ef44hjL.png">
 </span>
 
  <span align="center">
