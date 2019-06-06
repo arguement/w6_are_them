@@ -24,12 +24,15 @@ improved and quicker version, in order to save and retrieve data for each member
 
    Displays the details of each member
    
- 
- <span align="center">
-  <img width="300" height="auto" src="https://i.imgur.com/Ef44hjL.png">
-</span>
+<p> 
+   login
+    <span align="center">
+     <img width="300" height="auto" src="https://i.imgur.com/Ef44hjL.png">
+   </span>
+</p>
 
  <span align="center">
+   barcode screen
   <img width="300" height="auto" src="https://i.imgur.com/vseAuMI.png">
 </span>
 
