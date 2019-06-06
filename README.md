@@ -24,17 +24,26 @@ improved and quicker version, in order to save and retrieve data for each member
 
    Displays the details of each member
    
-   
+## Screens   
    
 <div> 
-   <h1> login <h1>
+   <h2> login <h2>
     <span align="center">
      <img width="300" height="auto" src="https://i.imgur.com/Ef44hjL.png">
    </span>
 </div>
 
- <span align="center">
-   barcode screen
-  <img width="300" height="auto" src="https://i.imgur.com/vseAuMI.png">
-</span>
+<div> 
+   <h2> barcode screen, Generator and Scanner <h2>
+    <span align="center">
+     <img width="300" height="auto" src="="https://i.imgur.com/vseAuMI.png">
+   </span>
+   <span align="center">
+     <img width="300" height="auto" src="="https://i.imgur.com/pkV4g3G.png">
+   </span>  
+   <span align="center">
+     <img width="300" height="auto" src="="https://i.imgur.com/hSpob0c.png">
+   </span> 
+</div>
+
 
