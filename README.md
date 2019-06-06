@@ -32,18 +32,29 @@ improved and quicker version, in order to save and retrieve data for each member
      <img width="300" height="auto" src="https://i.imgur.com/Ef44hjL.png">
    </span>
 </div>
+      
+<h2> barcode screen, Generator and Scanner <h2>
 
 <div> 
-   <h2> barcode screen, Generator and Scanner <h2>
+   <p> Barcode to intiate scan </p>
     <span align="center">
      <img width="300" height="auto" src="https://i.imgur.com/vseAuMI.png">
    </span>
+   
+</div>
+
+<div>
+   <p>Generated barcode by specified user</p>
    <span align="center">
      <img width="300" height="auto" src="https://i.imgur.com/pkV4g3G.png">
    </span>  
+ </div>
+ 
+ <div>
+   <p>Barcode Scanner</p>
    <span align="center">
      <img width="300" height="auto" src="https://i.imgur.com/hSpob0c.png">
-   </span> 
-</div>
+   </span>  
+ </div>
 
 
